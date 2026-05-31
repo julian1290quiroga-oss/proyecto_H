@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+h2{
+    color: #2e7d32;
+    font-size: 50px;
+}
+.logo img {
+    width: 7%;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2e7d32;
+}
+
+
+.fondo {
+    height: 90%;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1636525653613-2a3a05c00759?fm=jpg&q=60&w=3000&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    color: white;
+}
+
+
+
+
+.fondo p {
+    font-size: 16px;
+    max-width: 500px;
+}
+
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #1b5e20;
+    transform: scale(0.95);
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #2e7d32);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+}
+
+
+.contenido {
+    max-width: 500px;
+}
+
+.contenido h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.formulario {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario input {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    outline: none;
+}
+
+.formulario button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #27ae60;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    transform: scale(1.05);
+}
+
+
+.contenido span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
+.imagen {
+    width: 350px;
+    height: 350px;
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
+    border-radius: 25px;
+    opacity: 0.4;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.footer {
+    background: #e6e6cf;
+    padding: 60px 40px 20px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    max-width: 250px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #2e7d32;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social span {
+    display: inline-block;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
