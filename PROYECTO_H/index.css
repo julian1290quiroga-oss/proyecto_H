@@ -318,6 +318,11 @@ h2 {
     }
 }
 
+.categorias .button {
+    cursor: pointer; /* Hace que aparezca la manito del mouse */
+    /* Tus otros estilos de botones aquí */
+}
+
 /*contacto*/
 
 h1{
