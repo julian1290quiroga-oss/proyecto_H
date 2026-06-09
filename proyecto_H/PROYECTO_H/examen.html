@@ -1,74 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReineErde - Dashboard</title>
-    <link rel="stylesheet" href="examen.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ReineErde - Dashboard</title>
+        <link rel="stylesheet" href="examen.css">
+    </head>
+    <body>
 
-    <div class="dashboard-container">
-        <div class="profile-header">
-            <div class="avatar-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRv1nk_4FHqHS5nDLg5pEI7GlyYMQr75pDwQ&s" alt="Usuario">
-               
+        <nav class="top-nav">
+            <a href="store.html">Laden</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="our.html">Unser Geschäft</a>
+            <a href="examen.html">Wireframe</a>
+        </nav>
+
+        <div class="dashboard-container">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRv1nk_4FHqHS5nDLg5pEI7GlyYMQr75pDwQ&s"
+                        alt="Usuario">
+                    
+                </div>
+            </div>
+
+            <div class="profile-body">
+                <div class="user-info">
+                    <h2>Cristianp dos Santos</h2>
+                    <p class="user-title">ReineErde • Miembro desde 2023</p>
+                </div>
+
+                <div class="metrics-list">
+                    <div class="metric-card">
+                        <div class="metric-row">
+                            <span class="metric-label">🌳 Árboles
+                                Plantados</span>
+                            <span class="metric-value"><strong>15</strong> /
+                                100</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 15%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-row">
+                            <span class="metric-label">☁️ CO₂ Reducido</span>
+                            <span class="metric-value"><strong>320
+                                    kg</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-row">
+                            <span class="metric-label">💧 Agua Guardada</span>
+                            <span class="metric-value"><strong>68
+                                    L</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 45%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-row">
+                            <span class="metric-label">⭐ Eco-Points</span>
+                            <span
+                                class="metric-value"><strong>560</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill"
+                                style="width: 56%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-impact" onclick="generarDatos()">Ver Reporte
+                    Completo &rarr;</button>
             </div>
         </div>
 
-        <div class="profile-body">
-            <div class="user-info">
-                <h2>Cristianp dos Santos</h2>
-                <p class="user-title">ReineErde • Miembro desde 2023</p>
-            </div>
-
-            <div class="metrics-list">
-                <div class="metric-card">
-                    <div class="metric-row">
-                        <span class="metric-label">🌳 Árboles Plantados</span>
-                        <span class="metric-value"><strong>15</strong> / 100</span>
-                    </div>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" style="width: 15%;"></div>
-                    </div>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-row">
-                        <span class="metric-label">☁️ CO₂ Reducido</span>
-                        <span class="metric-value"><strong>320 kg</strong></span>
-                    </div>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" style="width: 60%;"></div>
-                    </div>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-row">
-                        <span class="metric-label">💧 Agua Guardada</span>
-                        <span class="metric-value"><strong>68 L</strong></span>
-                    </div>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" style="width: 45%;"></div>
-                    </div>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-row">
-                        <span class="metric-label">⭐ Eco-Points</span>
-                        <span class="metric-value"><strong>560</strong></span>
-                    </div>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" style="width: 45%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="btn-impact" onclick="generarDatos()">Ver Reporte Completo &rarr;</button>
-        </div>
-    </div>
-
-
-  
-</body>
+   
+    </body>
 </html>

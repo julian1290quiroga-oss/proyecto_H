@@ -7,13 +7,35 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+}
+
+.top-nav {
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    display: flex;
+    gap: 25px;
+    z-index: 10;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: #00e676;
 }
 
 .dashboard-container {
     width: 380px;
     background: #ffffff;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
@@ -76,7 +98,6 @@ body {
     color: #6c757d;
 }
 
-
 .metrics-list {
     display: flex;
     flex-direction: column;
@@ -105,6 +126,7 @@ body {
 .metric-value {
     color: #495057;
 }
+
 .progress-bar-bg {
     width: 100%;
     height: 8px;
@@ -115,12 +137,11 @@ body {
 
 .progress-bar-fill {
     height: 100%;
-    background-color: #00c853; /* Verde brillante ecológico */
+    background-color: #00c853;
     border-radius: 4px;
     transition: width 0.5s ease;
 }
 
-/* Botón Estilizado */
 .btn-impact {
     width: 100%;
     padding: 14px;
@@ -136,5 +157,4 @@ body {
 
 .btn-impact:hover {
     background: #00c853;
-}
-    
+} 
